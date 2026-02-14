@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="top-section">
+        <div class="quiz-section">
+            <h2>Quiz</h2>
+            <div class="quiz-container">
+                <p id="question"></p>
+                <div id="options"></div>
+                <div class="quiz-buttons">
+                    <button onclick="submitAnswer()">Submit</button>
+                    <button onclick="nextQuestion()">Next</button>
+                </div>
+                <p id="result"></p>
+            </div>
+        </div>
+
+        <div class="carousel-section">
+            <h2>Image Carousel</h2>
+            <div class="carousel">
+                <img src="https://picsum.photos/id/1015/800/400" class="active">
+                <img src="https://picsum.photos/id/1016/800/400">
+                <img src="https://picsum.photos/id/1018/800/400">
+            </div>
+            <div class="carousel-controls">
+                <button onclick="prevImage()">Previous</button>
+                <button onclick="nextImage()">Next</button>
+            </div>
+        </div>
+
+    </section>
+    <section class="api-section">
+        <h2>Random Joke Generator</h2>
+        <div class="api-box" id="jokeBox">
+            Click button to load joke
+        </div>
+        <button onclick="getJoke()">Fetch Joke</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
